@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           scrolledUnderElevation: 0,
           leading: IconButton(onPressed: () {}, icon: const Icon(Icons.search)),
-          title: const Text('Home Screen'),
+          title: const Text('Home'),
           centerTitle: true,
           actions: const [
             CircleAvatar(
