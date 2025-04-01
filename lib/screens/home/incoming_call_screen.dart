@@ -26,34 +26,32 @@ class IncomingCallScreen extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Container(
-                  child: Column(
-                    children: [
-                      const SizedBox(
-                        height: 100,
+                Column(
+                  children: [
+                    const SizedBox(
+                      height: 100,
+                    ),
+                    CircleAvatar(
+                      radius: 50,
+                      backgroundImage: NetworkImage(callerImageUrl),
+                    ),
+                    const SizedBox(height: 20),
+                    Text(
+                      callerName,
+                      style: const TextStyle(
+                        color: Colors.white,
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
                       ),
-                      CircleAvatar(
-                        radius: 50,
-                        backgroundImage: NetworkImage(callerImageUrl),
+                    ),
+                    const Text(
+                      'Incoming call',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
                       ),
-                      const SizedBox(height: 20),
-                      Text(
-                        callerName,
-                        style: const TextStyle(
-                          color: Colors.white,
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                      const Text(
-                        'Incoming call',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 16,
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
                 const SizedBox(height: 20),
                 Column(
@@ -116,6 +114,7 @@ class IncomingCallScreen extends StatelessWidget {
                             imageUrl: callerImageUrl,
                           );
                         }));
+                        return null;
                       },
                     ),
                   ],
