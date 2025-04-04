@@ -1,6 +1,6 @@
 import 'package:chat_app_mobile/screens/calls/call_screen.dart';
 import 'package:chat_app_mobile/screens/contacts/contact_screen.dart';
-import 'package:chat_app_mobile/screens/setting_screen.dart';
+import 'package:chat_app_mobile/screens/settings/setting_screen.dart';
 import 'package:flutter/material.dart';
 
 import 'home/home_screen.dart';
